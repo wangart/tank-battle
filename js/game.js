@@ -40,6 +40,8 @@ var game = {
     "loaded" : function () {
         // set the "Play/Ingame" Screen Object
         me.pool.register("player", game.Player);
+        me.pool.register("enemy", game.Enemy);
+        me.pool.register("laser", game.Laser);
         this.playScreen = new game.PlayScreen();
         me.state.set(me.state.PLAY, this.playScreen);
 
